@@ -44,8 +44,8 @@ public class CategoriaServiceImpl implements CategoriaService {
 	@Override
 	public boolean categoriaTemVeiculo(Long id) {
 		if(findById(id).getVeiculos().isEmpty()){
-			return false; // não tem veiculo cadastrado na categoria pesquisada
+			return false; 
 		}
-		return true; // tem veiculo cadastrado na categoria pesquisada
+		return true; 
 	}
 }
